@@ -1,0 +1,533 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #ffffff, #e3e8f1);
+    padding: 0 20px;
+}
+
+/* Header Styling */
+header {
+    background: #3e4a61;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Main Content */
+main {
+    margin: 20px auto;
+    max-width: 900px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Biography Section */
+#biography {
+    margin-bottom: 20px;
+    text-align: center; /* Center align content by default */
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column; /* Default to column on small screens */
+    align-items: center;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .about-container {
+        flex-direction: row; /* Change to row for larger screens */
+        justify-content: flex-start;
+        text-align: left;
+    }
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circular profile image */
+    border: 4px solid #3e4a61; /* Add a border matching the theme */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    object-fit: cover; /* Ensure the image scales well */
+}
+
+.about-container p {
+    flex: 1; /* Allow text to take up remaining space in row layout */
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+
+#biography h2 {
+    font-size: 1.8rem;
+    color: #3e4a61;
+    margin-bottom: 10px;
+}
+
+#biography p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Social Media Section */
+#social-media h2 {
+    font-size: 1.8rem;
+    color: #3e4a61;
+    margin-bottom: 10px;
+    text-align: center; /* Center the text */
+}
+
+#social-media ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+#social-media ul li {
+    margin: 0 10px;
+}
+
+#social-media ul li a {
+    text-decoration: none;
+    color: #3e4a61;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border: 2px solid #3e4a61;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#social-media ul li a:hover {
+    background: #3e4a61;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #555;
+    font-size: 0.9rem;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+/* About Me Page Styling */
+#academic-background, #certificates, #gallery {
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#academic-background h2, #certificates h2, #gallery h2 {
+    color: #3e4a61;
+    margin-bottom: 10px;
+}
+
+#academic-background ul, #certificates ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #555;
+}
+
+.gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.gallery img {
+    width: calc(33.33% - 10px);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+/* Contact Form Styling */
+#contact {
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    color: #3e4a61;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#contact p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #3e4a61;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #3e4a61;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    display: inline-block;
+    background: #3e4a61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #2b364a;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+/* Skills Section */
+#skills {
+    margin: 20px auto;
+    max-width: 800px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#skills h2 {
+    font-size: 1.8rem;
+    color: #3e4a61;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    width: 100%;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.progress {
+    height: 20px;
+    background: linear-gradient(90deg, #3e4a61, #2b364a);
+    color: #fff;
+    font-size: 0.9rem;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 20px;
+    border-radius: 10px 0 0 10px;
+}
+
+
+/* Experience Section */
+#experience {
+    margin: 20px auto;
+    max-width: 900px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#experience h2 {
+    font-size: 1.8rem;
+    color: #3e4a61;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Timeline Styling */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-left: 3px solid #3e4a61;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -6px;
+    width: 12px;
+    height: 12px;
+    background: #3e4a61;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #f9f9f9;
+}
+
+.timeline-content {
+    background: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #3e4a61;
+}
+
+.timeline-content p {
+    margin: 0 0 10px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.timeline-content ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #555;
+    font-size: 0.9rem;
+}
+/* Quiz Section Styling */
+/* Quiz Section Styling */
+#quiz {
+    margin: 20px auto;
+    max-width: 800px;
+    background: #f3f5f7;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Header Styling for the Quiz */
+#quiz h2 {
+    color: #4a5568;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Quiz Question Styling */
+.quiz-question {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quiz-question:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.quiz-question p {
+    font-size: 1.2rem;
+    color: #3e4a61;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+.quiz-question label {
+    margin-left: 10px;
+    display: grid; /* Use grid layout */
+    grid-template-columns: auto 1fr auto; /* Text in the middle, radio button on the far right */
+    align-items: center; /* Ensure vertical alignment */
+    margin-bottom: 10px; /* Space between options */
+    cursor: pointer; /* Makes the label clickable */
+}
+
+.quiz-question input[type="radio"] {
+    justify-self: end; /* Pushes the radio button to the right */
+    margin: 10px; /* Removes extra spacing around radio buttons */
+}
+
+
+
+
+
+
+
+/* Styling for the Submit Button */
+#submit-quiz {
+    display: block;
+    width: 100%;
+    background: #4a5568;
+    color: #fff;
+    padding: 16px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#submit-quiz:hover {
+    background: #ffb800;
+    color: #4a5568;
+    transform: scale(1.05);
+}
+
+/* Result Styling */
+#result {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #4a5568;
+    background: #f1f5f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+#result h3 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+#result p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+
+
